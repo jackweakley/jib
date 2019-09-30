@@ -147,6 +147,7 @@ subprojects {
       showStandardStreams = true
       exceptionFormat = 'full'
     }
+	ignoreFailures = true
   }
   // jar to export tests classes for import in other project by doing:
   // testCompile project(path:':project-name', configuration:'tests')
