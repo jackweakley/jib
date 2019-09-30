@@ -33,6 +33,14 @@ subprojects {
   apply plugin: 'com.github.sherter.google-java-format'
   apply plugin: 'net.ltgt.apt'
   apply plugin: 'net.ltgt.errorprone'
+  apply plugin: 'jacoco'
+  
+  jacocoTestReport {
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+  }
 
   sourceCompatibility = JavaVersion.VERSION_1_8
   targetCompatibility = JavaVersion.VERSION_1_8
