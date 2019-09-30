@@ -143,6 +143,7 @@ subprojects {
   }
 
   test {
+	ignoreFailures = true
     testLogging {
       showStandardStreams = true
       exceptionFormat = 'full'
